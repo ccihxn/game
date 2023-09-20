@@ -26,6 +26,6 @@
 
 ## tetris.c 의 출력 결과
 
-![image](https://github.com/wjswlghks77/game/assets/35947666/1a6be88c-3fdf-4096-84c3-c921ffa2d60c)
 ![image](https://github.com/wjswlghks77/game/assets/35947666/86114de8-f99a-4247-8f50-fa5f5327271d)
-![image](https://github.com/wjswlghks77/game/assets/35947666/a2dfd553-62b4-4479-86e6-5a9a2b841efb)
+![image](https://github.com/wjswlghks77/game/assets/35947666/5287bcd9-c55f-4a12-bd30-a540f7a31c01)
+
