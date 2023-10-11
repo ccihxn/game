@@ -7,10 +7,19 @@ char bio_status(int val, int mod);
 
 int main(void)
 {
+    printf("바이오리듬 계산기 프로그램입니다.\n");
+    printf("Enter를 입력하면 실행됩니다.");
+    char c;
+    scanf("%c", &c);
+    if(c != '\n') {
+        printf("다른 버튼을 누르셨습니다, 프로그램이 종료됩니다. 좋은 하루되세요! *^^*\n");
+        return 0;
+    }
     int byr, bmon, bday;
     int tyr, tmon, tday;
     long total=0;
-    printf("특정월의 바이오리듬 계산\n");
+    printf("반갑습니다! 바이오리듬 계산 프로그램에 오신 것을 환영합니다.\n");
+    printf("특정월의 바이오리듬을 계산하는 프로그램입니다.\n");
     printf("첫번째 날짜와 두번째 날짜를 입력하고 Enter 하세요.\n");
     printf("첫번째 날짜가 두번째 날짜보다 앞서야 합니다. \n\n");
     printf("생년 월일을 입력하세요 (ex: 1983 5 21) \n");
