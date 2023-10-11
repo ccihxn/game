@@ -15,6 +15,7 @@ int main(void)
         printf("다른 버튼을 누르셨습니다, 프로그램이 종료됩니다. 좋은 하루되세요! *^^*\n");
         return 0;
     }
+    system("cls");
     int byr, bmon, bday;
     int tyr, tmon, tday;
     long total=0;
