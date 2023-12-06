@@ -1,7 +1,8 @@
 https://www.w3schools.com/graphics/game_intro.asp
 
-# 위의 링크에 설명 된 html 게임 분석 및 발표.
+## 위의 링크에 설명 된 html 게임 분석 및 발표.
 
+# 아래는 발표자료 ppt의 내용
 <img width="1440" alt="image" src="https://github.com/ccihxn/game/assets/35947666/17ccc24b-4ab4-4632-99cd-1bb750f238d3">
 <img width="1440" alt="image" src="https://github.com/ccihxn/game/assets/35947666/9ae0026a-c657-412b-ab4f-75b60a9a75da">
 <img width="1440" alt="image" src="https://github.com/ccihxn/game/assets/35947666/cc6d6c76-8d5c-423a-8745-80685d1dc6d0">
