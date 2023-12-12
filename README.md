@@ -16,3 +16,8 @@
   - 10주차에 분석한 html 게임을 업그레이드 및 발표
 ### [13주차](https://github.com/ccihxn/game/tree/main/week13)
   - 교수님께서 내어주신 pdf파일의 코드를 unity에서 작성 및 실행
+### [14주차](https://github.com/ccihxn/game/tree/main/week14)
+### [15주차](https://github.com/ccihxn/game/tree/main/week15)
+  - Unity Upgrade 발표
+
+###  - [발표 프레젠테이션](https://www.canva.com/design/DAF2yrP1xGc/30N7FbVvBzEaFD2sBwlhcg/view?utm_content=DAF2yrP1xGc&utm_campaign=designshare&utm_medium=link&utm_source=editor)
