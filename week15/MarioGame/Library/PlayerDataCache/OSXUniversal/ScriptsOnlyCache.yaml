@@ -1,17 +1,22 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - AudioManager
     - BallJump
-    - ButtonController
     - CameraFollow
     - CoinTrigger
+    - ExitButtonController
     - FailZone
+    - FireCoinItem
     - GameManager
+    - GreenCoinItem
     - GroundMove
-    - MarioController
+    - MimeCoinItem
     - ObstacleMove
     - PrtPosition
     - RedCoinItem
+    - RestartButtonController
+    - StartButtonController
     Unity.PlasticSCM.Editor.dll:
     - Unity.PlasticSCM.Editor.PlasticWindow
     Unity.Rider.Editor.dll:
@@ -27,7 +32,10 @@ ScriptsOnlyBuild:
     - TMPro.TMP_Settings
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
+    - TMPro.TextMeshPro
     - TMPro.TextMeshProUGUI
+    Unity.Timeline.Editor.dll:
+    - TimelineProjectSettings
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -73,9 +81,84 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.SpriteState
   methodsToPreserve:
   - assembly: Assembly-CSharp
-    fullTypeName: ButtonController
+    fullTypeName: StartButtonController
+    methodName: OnClick
+  - assembly: Assembly-CSharp
+    fullTypeName: ExitButtonController
+    methodName: OnClick
+  - assembly: Assembly-CSharp
+    fullTypeName: RestartButtonController
     methodName: OnClick
   sceneClasses:
+    Assets/Scenes/GameOver.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1602}
+    - Class: 114
+      Script: {instanceID: 2602}
+    - Class: 114
+      Script: {instanceID: 2806}
+    - Class: 114
+      Script: {instanceID: 3094}
+    - Class: 114
+      Script: {instanceID: 3520}
+    - Class: 114
+      Script: {instanceID: 5038}
+    - Class: 114
+      Script: {instanceID: 5584}
+    - Class: 114
+      Script: {instanceID: 5734}
+    - Class: 114
+      Script: {instanceID: 6048}
+    - Class: 114
+      Script: {instanceID: 47914}
+    - Class: 114
+      Script: {instanceID: 47918}
+    - Class: 114
+      Script: {instanceID: 51474}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
     Assets/Scenes/Intro.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -92,6 +175,10 @@ ScriptsOnlyBuild:
     - Class: 49
       Script: {instanceID: 0}
     - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
       Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
@@ -216,6 +303,12 @@ ScriptsOnlyBuild:
       Script: {instanceID: 23550}
     - Class: 114
       Script: {instanceID: 23554}
+    - Class: 114
+      Script: {instanceID: 41214}
+    - Class: 114
+      Script: {instanceID: 59290}
+    - Class: 114
+      Script: {instanceID: 68716}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -255,12 +348,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: Image
-  - hash:
-      serializedVersion: 2
-      Hash: 172a5452f4c30dafaa925e663c7636e1
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: MarioController
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
@@ -899,12 +986,6 @@ ScriptsOnlyBuild:
     className: TMP_DigitValidator
   - hash:
       serializedVersion: 2
-      Hash: 07888765f49ddfe5ce4994b77319dd89
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: Shooter
-  - hash:
-      serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -1199,19 +1280,13 @@ ScriptsOnlyBuild:
     className: ControlTrack
   - hash:
       serializedVersion: 2
-      Hash: 751e5bae2a317288c2ab58d66687092b
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: Stone
-  - hash:
-      serializedVersion: 2
       Hash: 1acffdc47de1ca014dae3d384c3d1086
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: ScrollRect
   - hash:
       serializedVersion: 2
-      Hash: 6db86b7cb1aeb337a9714b70c87ef8ed
+      Hash: 72ae4b5fd11fb483fc62e89a74b719fb
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: CoinTrigger
@@ -1310,7 +1385,7 @@ ScriptsOnlyBuild:
       Hash: 751e5bae2a317288c2ab58d66687092b
     assemblyName: Assembly-CSharp
     namespaceName: 
-    className: ButtonController
+    className: StartButtonController
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
@@ -1337,7 +1412,7 @@ ScriptsOnlyBuild:
     className: UnityOnTriggerExit2DMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 29201efe1315a8324d0e9fddb95145e1
+      Hash: 14d0e8d8a37742f83ca785d25a5949e9
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: GameManager
@@ -1347,8 +1422,45 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: GreenCoinItem
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: RestartButtonController
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: ExitButtonController
+  - hash:
+      serializedVersion: 2
+      Hash: 36924bcdd3516044d91b0f92d07648ea
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: AudioManager
+  - hash:
+      serializedVersion: 2
+      Hash: 5f5e59d4e84a1c174fb4620814a70907
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: FireCoinItem
+  - hash:
+      serializedVersion: 2
+      Hash: a323a7e655f44b86bc3eae8c4d0ff719
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: MimeCoinItem
   platform: 2
   scenePathNames:
   - Assets/Scenes/Intro.unity
   - Assets/Scenes/SampleScene.unity
+  - Assets/Scenes/GameOver.unity
   playerPath: /Users/ccihxn/2023-2/game/week15/RecoilMario.app

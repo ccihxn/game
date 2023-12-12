@@ -1,11 +1,11 @@
 using UnityEngine;
 public class CameraFollow : MonoBehaviour
 {
-    GameObject ball;
+    GameObject mario;
     // Start is called before the first frame update
     void Start()
     {
-        ball = GameObject.Find("Ball");
+        mario = GameObject.Find("Mario");
         GameObject[] coins = GameObject.FindGameObjectsWithTag("Coin");
         for (int i = 0; i < coins.Length; i++)
         {
@@ -16,7 +16,7 @@ public class CameraFollow : MonoBehaviour
     void Update()
     {
         transform.position = new Vector3(0,
-        ball.transform.position.y + 3,
-        ball.transform.position.z - 14);
+        mario.transform.position.y + 3,
+        mario.transform.position.z - 14);
     }
 }

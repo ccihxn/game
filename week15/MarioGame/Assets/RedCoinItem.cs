@@ -3,10 +3,9 @@ public class RedCoinItem : MonoBehaviour
 {
     void OnTriggerEnter(Collider collider)
     {
-        if (collider.gameObject.name == "Ball")
+        if (collider.gameObject.name == "Mario")
         {
-            GameObject.Find("GameManager").SendMessage("RedCoinStart");
-            Destroy(gameObject);
+            GameObject.Find("GameManager").SendMessage("GameOver");
         }
     }
     // Start is called before the first frame update
