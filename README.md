@@ -22,5 +22,8 @@
   - Unity Upgrade 발표
   - [발표 프레젠테이션](https://www.canva.com/design/DAF2yrP1xGc/30N7FbVvBzEaFD2sBwlhcg/view?utm_content=DAF2yrP1xGc&utm_campaign=designshare&utm_medium=link&utm_source=editor)
 
+  - ![kisspng-g-suite-pearl-river-middle-school-google-docs-soft-google-plus-5ad4f155e44c00 9149775715239048539351](https://github.com/ccihxn/game/assets/35947666/d1cb0172-c74f-4f7b-a92f-d0acd8e2fe45)
+
+
 
 ![Kicketing_logo](https://github.com/ccihxn/game/assets/35947666/1968f4c2-6516-4c3b-aded-ec3cb3a2cb4a)
